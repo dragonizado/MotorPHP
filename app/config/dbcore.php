@@ -3,6 +3,9 @@
 * Dragonizado 2018
 */
 
+define('_DEFAULTFOLDER_TEMPLATE_',$templatefolder);
+
+
 // se define un entorno (desarrollo o producción)
 define('ENVIRONMENT', $environment);
 if (ENVIRONMENT == 'development' || ENVIRONMENT == 'dev') {
