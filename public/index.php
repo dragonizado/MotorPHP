@@ -1,7 +1,7 @@
 <?php 
-/**
-*	Dragonizado 2018
-**/
+/*
+* Dragonizado 2018
+*/
 
 define('ROOT', dirname(__DIR__) . DIRECTORY_SEPARATOR);
 define('APP', ROOT . 'app' . DIRECTORY_SEPARATOR);
