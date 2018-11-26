@@ -81,6 +81,14 @@ class Controller
         }
     }
 
+    public function isLogin(){
+        session_start();
+        if(isset($_SESSION['user'])){
+            return true;
+        }
+        return false;
+    }
+
     public function mensajes($tipo,$msn){
     	session_start();
 		$_SESSION['message'] = [$tipo,$msn];

@@ -8,7 +8,7 @@ class defaultModel
 	function __construct($db)
 	{
 		try {
-            $this->_db = $db;
+            $this->db = $db;
         } catch (PDOException $e) {
             exit('Database connection could not be established.');
         }
@@ -28,7 +28,7 @@ class defaultModel
         $sql = "INSERT INTO song (artist, track, link) VALUES (:artist, :track, :link)";
         $query = $this->db->prepare($sql);
         $parameters = array(':artist' => $artist, ':track' => $track, ':link' => $link);
-        $query->execute($parameters);
+        return $query->execute($parameters);
     }
 
 }
