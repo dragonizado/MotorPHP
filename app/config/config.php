@@ -5,7 +5,7 @@
 
 //configuración de base de datos;
 $config = [
-	"appName"=>"",
+	"appname"=>"",
 	//elegir la carpeta de plantillas por defecto
 	"template"=>'default',
 

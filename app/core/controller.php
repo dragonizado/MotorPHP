@@ -97,6 +97,21 @@ class Controller
     public function redirect($url){
 		header("location:".URL."public/?url=".$url);
 	}
+
+    public function createUrl($path,$params=null){
+        $url = URL.'public/?url='.$path;
+        if(!is_null($params) && is_array($params)){
+            foreach ($params as $key => $value) {
+                $url .= "&".$key."=".$value;
+            }
+        }
+        return $url;
+    }
+
+    public function createResourceUrl($path){
+        $url = URL.'public/'.$path;
+        return $url;
+    }
 }
 	
 
